@@ -62,11 +62,16 @@ img {
 .text-center {
   text-align: center;
 }
-body {
+html,body {
   width: 100%;
   /* lỗi khi set width: 100vw sẽ xuất hiện scrollX */
   position: relative;
 }
+.over-hidden{
+  overflow: hidden;
+
+}
+
 
 .col-2 {
   display: grid;
@@ -253,6 +258,7 @@ body {
   list-style: circle;
   font-size: 15px;
   line-height: 24px;
+  text-align: start;
 }
 .project iframe {
   width: 100%;

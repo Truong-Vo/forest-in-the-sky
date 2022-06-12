@@ -10,8 +10,8 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="shortcut icon" href="./images/letter-f-logo-leaf-icon-design-concept-vector.jpg" type="image/x-icon" style="background-color:#fff;">
-  <title>Forest in the sky</title>
+    <link rel="shortcut icon" href="./images/letter-f-logo-leaf-icon-design-concept-vector.jpg" type="image/x-icon" style="background-color:transparent;">
+  <title>Forest</title>
 </head>
 
 <body>
@@ -83,9 +83,9 @@
 
   <section>
     <div class="project">
-      <div class="container row pt-30 pb-30 animation-right">
+      <div class="container row pt-30 pb-30">
         <!-- Insert-video -->
-        <div class="row col-2">
+        <div class="row col-2"  data-aos="fade-right">
           <div>
             <h2>TỔNG QUAN DỰ ÁN</h2>
             <ul>
@@ -175,8 +175,8 @@
   </section>
 
   <!-- Location -->
-  <section class="location " data-aos="fade-left">
-    <div class="container">
+  <section class="location over-hidden" >
+    <div class="container " data-aos="fade-left">
       <h2>ĐẾN VỚI FLAMINGO CHỈ SAU 45 PHÚT LÁI XE</h2>
       <div class="col-2">
         <div>
@@ -214,8 +214,8 @@
   </section>
 
   <!-- Villa -->
-  <section class="villa" data-aos="fade-right">
-    <div class="container">
+  <section class="villa over-hidden" >
+    <div class="container" data-aos="fade-right">
       <div class="col-2">
         <div></div>
         <div class="villa-description">
@@ -307,8 +307,8 @@
 
   <!--policy  -->
 
-  <section data-aos="fade-left">
-    <div class="policy">
+  <section class="over-hidden" >
+    <div class="policy " data-aos="fade-left">
       <div class="container row pt-30 pb-30">
         <h2>CHÍNH SÁCH ĐẦU TƯ FOREST IN THE SKY</h2>
 
@@ -482,8 +482,8 @@
   </section>
 
   <!-- footer -->
-  <footer data-aos="fade-up">
-    <div class="container">
+  <footer >
+    <div class="container over-hidden" data-aos="fade-up">
       <div class="col-3">
         <div class="company-info">
           <img src="./images/brandcompany.png" alt="">
@@ -532,6 +532,9 @@
 
   <!-- Main -->
   <script src="./app.js"></script>
+
+  <!-- Chú ý: khi dùng thư viện AOS, phải thêm overflow:hidden vào thẻ cha section chứa nó để không bị over width -->
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
       AOS.init({
